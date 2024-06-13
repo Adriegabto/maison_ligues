@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e0f7fa; /* Bleu clair */
+}
+
+.container {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin: 20px auto;
+}
+
+.icon-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #80deea; /* Bleu moyen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #004d40; /* Bordure bleu foncé */
+    margin: 0 auto;
+}
+
+.login-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-form label {
+    margin: 10px 0 5px;
+    color: #00796b; /* Texte bleu foncé */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #80deea; /* Bordure bleu moyen */
+    border-radius: 5px;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: #00796b; /* Bouton bleu foncé */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.login-form button:hover {
+    background-color: #004d40; /* Couleur de survol du bouton */
+}
+
+footer {
+    margin-top: 20px;
+    color: #004d40; /* Texte bleu foncé */
+}

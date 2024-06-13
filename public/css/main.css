@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e0f7fa; /* Couleur de fond bleu clair */
+}
+
+.container {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 20px;
+    color: #00796b; /* Texte bleu foncé */
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.content-box {
+    width: 100px;
+    height: 100px;
+    background-color: #80deea; /* Fond bleu moyen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #004d40; /* Bordure bleu foncé */
+    color: #004d40; /* Texte bleu foncé */
+}
+
+.cta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background-color: #00796b; /* Bouton bleu foncé */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #004d40; /* Couleur de survol du bouton */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #004d40; /* Texte bleu foncé */
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
