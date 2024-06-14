@@ -49,4 +49,9 @@ class PageController extends Controller
     {
         return view('success');
     }
+
+    public function events()
+    {
+        return view('events');
+    }
 }

@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('titre');
             $table->text('contenu');
             $table->timestamps();
+
+            $table->foreign('clients_id')->references('id')->on('clients')->onDelete('cascade');
         });
     }
 

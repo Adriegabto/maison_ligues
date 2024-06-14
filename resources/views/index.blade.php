@@ -68,6 +68,7 @@
             <section class="cta">
                 <button><a href="{{ url('/form') }}">Cliquez pour vous inscrire</a></button>
                 <button><a href="{{ url('/login') }}">Login</a></button>
+                <button><a href="{{ url('/events.index') }}">event</a></button>
             </section>
         </main>
         <footer>

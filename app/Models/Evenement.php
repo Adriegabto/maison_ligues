@@ -10,8 +10,11 @@ class Evenement extends Model
     use HasFactory;
 
     protected $fillable = [
-        'image',
-        'titre',
-        'contenu',
+        'user_id', 'title', 'description', 'event_date'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
