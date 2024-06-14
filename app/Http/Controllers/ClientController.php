@@ -17,24 +17,19 @@ class ClientController extends Controller
 
     // Traitement du login
     public function login(Request $request)
-    {
-        $credentials = $request->only('email', 'password');
+{
+    $credentials = $request->only('email', 'password');
 
-        if (Auth::attempt($credentials)) {
-            return redirect()->route('success');
-        } else {
-            return back()->withErrors(['message' => 'Invalid credentials.']);
-        }
-    }
+    \Log::info('Attempting to log in', ['credentials' => $credentials]);
 
-    public function showSuccess()
-    {
-        $client = Auth::user();
-        if (!$client) {
-            return redirect()->route('login')->withErrors(['message' => 'Vous devez être connecté pour accéder à cette page.']);
-        }
-        return view('success', compact('client'));
+    if (Auth::attempt($credentials)) {
+        \Log::info('User authenticated', ['user' => Auth::user()]);
+        return redirect()->route('home'); // Redirection vers la page d'accueil après une connexion réussie
+    } else {
+        return back()->withErrors(['message' => 'Invalid credentials.']);
     }
+}
+
 
     // Affiche le formulaire d'inscription
     public function showRegistrationForm()

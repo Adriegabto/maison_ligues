@@ -22,7 +22,7 @@
             <section class="login-form">
                 <h3>Connexion</h3>
                 <form method="POST" action="{{ route('login') }}">
-                    @csrf
+                @csrf
                     <label for="email">email</label>
                     <input type="text" id="email" name="email" placeholder="Email" required>
                     

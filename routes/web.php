@@ -18,7 +18,7 @@ Route::get('/register', [ClientController::class, 'showRegistrationForm'])->name
 Route::post('/register', [ClientController::class, 'register'])->name('register.post');
 
 // Route de succès
-Route::get('/success', [ClientController::class, 'showSuccess'])->name('success')->middleware('check.auth');
+Route::get('/success', [ClientController::class, 'showSuccess'])->name('success')->middleware('.auth');
 
 
 // Routes supplémentaires
