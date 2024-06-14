@@ -9,11 +9,11 @@
 <body>
     <div class="container">
         <header>
-            <h1>Index maison des ligues</h1>
+        <h1><a href="{{ url('/') }}">Maison des ligues tous les sports</a></h1>
         </header>
         <main>
             <div class="header">
-                <h2><a href="{{ url('/') }}">Maison des ligues tous les sports</a></h2>
+                
             </div>
             <section class="intro">
                 <h3>Prêt(e) à la compétition? Cliquez sur le bouton pour commencer</h3>
@@ -23,28 +23,46 @@
             </section>
             <section class="content-grid">
                 <div class="row">
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/aviron.png') }}" alt="Logo" class="resize-image">
+                    </div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/atlétisme.png') }}" alt="Logo" class="resize-image">
+                    </div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/badminton.png') }}" alt="Logo" class="resize-image">
+                    </div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/boxe.png') }}" alt="Logo" class="resize-image">
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/judo.png') }}" alt="Logo" class="resize-image">
+                    </div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/tar.png') }}" alt="Logo" class="resize-image">
+                    </div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/cyslisme.png') }}" alt="Logo" class="resize-image">
+                    </div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/escrime.png') }}" alt="Logo" class="resize-image">
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
-                </div>
-                <div class="row">
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
-                    <div class="content-box">content</div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/tennis.png') }}" alt="Logo" class="resize-image">
+                    </div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/halterophilie.png') }}" alt="Logo" class="resize-image">
+                    </div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/natation.png') }}" alt="Logo" class="resize-image">
+                    </div>
+                    <div class="content-box">
+                    <img src="{{ asset('images/gym.png') }}" alt="Logo" class="resize-image">
+                    </div>
                 </div>
             </section>
             <section class="cta">

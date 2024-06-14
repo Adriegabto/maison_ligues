@@ -2,23 +2,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #e0f7fa; /* Couleur de fond bleu clair */
 }
 
-.container {
-    width: 80%;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.page-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 header {
     text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    flex-grow: 1;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -46,8 +54,8 @@ header {
 }
 
 .content-box {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: #80deea; /* Fond bleu moyen */
     display: flex;
     justify-content: center;
@@ -83,4 +91,10 @@ footer {
 button a {
     text-decoration: none;
     color: white;
+}
+
+.resize-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
